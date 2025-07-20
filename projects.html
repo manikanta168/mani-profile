@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects - Vanamada Manikanta</title>
+  <meta name="description" content="Explore AWS cloud projects by Vanamada Manikanta, showcasing serverless architectures and modern development practices."/>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <style>
+    @keyframes fade-in {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in {
+      animation: fade-in 0.8s ease-out both;
+    }
+    .floating-elements {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 relative overflow-x-hidden">
+  
+  <!-- Floating Background Elements -->
+  <div class="floating-elements"></div>
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/5 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 bg-gradient-to-br from-blue-400 to-purple-600 rounded-lg flex items-center justify-center">
+            <i data-lucide="cloud" class="w-6 h-6 text-white"></i>
+          </div>
+          <span class="text-white font-bold text-xl">Vanamada Manikanta</span>
+        </div>
+        <div class="hidden md:block">
+          <div class="flex items-center space-x-8">
+            <a href="index.html" class="nav-link text-sm font-medium text-white hover:text-blue-300 transition-all duration-300 relative group">Home</a>
+            <a href="about.html" class="nav-link text-sm font-medium text-white hover:text-blue-300 transition-all duration-300 relative group">About</a>
+            <a href="experience.html" class="nav-link text-sm font-medium text-white hover:text-blue-300 transition-all duration-300 relative group">Experience</a>
+            <a href="projects.html" class="nav-link text-sm font-medium text-blue-400 relative group">Projects
+              <span class="absolute bottom-0 left-0 w-full h-0.5 bg-blue-400 transition-all duration-300"></span>
+            </a>
+            <a href="skills.html" class="nav-link text-sm font-medium text-white hover:text-blue-300 transition-all duration-300 relative group">Skills</a>
+            <a href="certifications.html" class="nav-link text-sm font-medium text-white hover:text-blue-300 transition-all duration-300 relative group">Certifications</a>
+            <a href="contact.html" class="nav-link text-sm font-medium text-white hover:text-blue-300 transition-all duration-300 relative group">Contact</a>
+          </div>
+        </div>
+        <div class="md:hidden">
+          <button id="mobile-menu-btn" class="text-white hover:text-blue-300 transition-colors p-2 rounded-lg hover:bg-white/10">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden bg-black/50 backdrop-blur-md hidden">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        <a href="index.html" class="block px-4 py-3 text-base font-medium text-white hover:text-blue-300 hover:bg-white/10 rounded-lg">Home</a>
+        <a href="about.html" class="block px-4 py-3 text-base font-medium text-white hover:text-blue-300 hover:bg-white/10 rounded-lg">About</a>
+        <a href="experience.html" class="block px-4 py-3 text-base font-medium text-white hover:text-blue-300 hover:bg-white/10 rounded-lg">Experience</a>
+        <a href="projects.html" class="block px-4 py-3 text-base font-medium text-blue-400 bg-white/10 rounded-lg">Projects</a>
+        <a href="skills.html" class="block px-4 py-3 text-base font-medium text-white hover:text-blue-300 hover:bg-white/10 rounded-lg">Skills</a>
+        <a href="certifications.html" class="block px-4 py-3 text-base font-medium text-white hover:text-blue-300 hover:bg-white/10 rounded-lg">Certifications</a>
+        <a href="contact.html" class="block px-4 py-3 text-base font-medium text-white hover:text-blue-300 hover:bg-white/10 rounded-lg">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Projects Section -->
+  <section class="py-20 bg-black/20 min-h-screen pt-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">AWS Projects</h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-600 mx-auto rounded-full"></div>
+        <p class="text-gray-300 text-lg mt-6 max-w-3xl mx-auto">
+          Explore my cloud-native projects built with AWS services, showcasing serverless architectures and modern development practices.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project Card 1 -->
+        <a href="https://manikanta168.github.io/myproject-cloudaudio/" target="_blank" class="block animate-fade-in">
+          <div class="rounded-2xl p-8 transition-all duration-300 hover:scale-105 bg-white/5 border border-white/10">
+            <div class="flex items-center justify-between mb-6">
+              <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl flex items-center justify-center">
+                <i data-lucide="mic" class="w-8 h-8 text-white"></i>
+              </div>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS" class="w-8 h-8">
+            </div>
+            <h3 class="text-xl font-semibold text-white mb-3">Multilingual Audio-to-Text Translator</h3>
+            <p class="text-gray-300 mb-6">Real-time serverless application for audio transcription and translation using AWS Transcribe and Lambda functions.</p>
+            <div class="flex flex-wrap gap-3 mb-6">
+              <span class="bg-black/30 text-xs text-gray-300 px-3 py-2 rounded-lg flex items-center gap-2"><i data-lucide="zap" class="w-4 h-4 text-yellow-400"></i>Lambda</span>
+              <span class="bg-black/30 text-xs text-gray-300 px-3 py-2 rounded-lg flex items-center gap-2"><i data-lucide="mic" class="w-4 h-4 text-blue-400"></i>Transcribe</span>
+              <span class="bg-black/30 text-xs text-gray-300 px-3 py-2 rounded-lg flex items-center gap-2"><i data-lucide="server" class="w-4 h-4 text-green-400"></i>API Gateway</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-2 text-green-400">
+                <i data-lucide="check-circle" class="w-4 h-4"></i>
+                <span class="text-sm">Production Ready</span>
+              </div>
+              <i data-lucide="external-link" class="w-5 h-5 text-blue-400"></i>
+            </div>
+          </div>
+        </a>
+        <!-- Project 2: Student Leave Portal -->
+<div class="rounded-2xl p-8 transition-all duration-300 hover:scale-105 bg-white/5 border border-white/10 animate-fade-in" style="animation-delay: 0.2s;">
+  <div class="flex items-center justify-between mb-6">
+    <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center">
+      <i data-lucide="book-open" class="w-8 h-8 text-white"></i>
+    </div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS" class="w-8 h-8">
+  </div>
+  <h3 class="text-xl font-semibold text-white mb-3">Student Leave Portal</h3>
+  <p class="text-gray-300 mb-6">
+    A secure, serverless leave management system using AWS Lambda, DynamoDB, API Gateway, and SNS for SMS alerts.
+  </p>
+  <div class="flex flex-wrap gap-3 mb-6">
+    <span class="bg-black/30 text-xs text-gray-300 px-3 py-2 rounded-lg flex items-center gap-2"><i data-lucide="server" class="w-4 h-4 text-green-400"></i>API Gateway</span>
+    <span class="bg-black/30 text-xs text-gray-300 px-3 py-2 rounded-lg flex items-center gap-2"><i data-lucide="database" class="w-4 h-4 text-orange-400"></i>DynamoDB</span>
+    <span class="bg-black/30 text-xs text-gray-300 px-3 py-2 rounded-lg flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-yellow-400"></i>SNS</span>
+  </div>
+  <div class="flex items-center justify-between">
+    <div class="flex items-center space-x-2 text-yellow-400">
+      <i data-lucide="clock" class="w-4 h-4"></i>
+      <span class="text-sm">In Development</span>
+    </div>
+    <i data-lucide="external-link" class="w-5 h-5 text-blue-400"></i>
+  </div>
+</div>
+
+<!-- Project 3: Fee Management System -->
+<div class="rounded-2xl p-8 transition-all duration-300 hover:scale-105 bg-white/5 border border-white/10 animate-fade-in" style="animation-delay: 0.4s;">
+  <div class="flex items-center justify-between mb-6">
+    <div class="w-16 h-16 bg-gradient-to-br from-pink-500 to-purple-700 rounded-2xl flex items-center justify-center">
+      <i data-lucide="credit-card" class="w-8 h-8 text-white"></i>
+    </div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS" class="w-8 h-8">
+  </div>
+  <h3 class="text-xl font-semibold text-white mb-3">Fee Management System</h3>
+  <p class="text-gray-300 mb-6">
+    Web-based fee portal using S3 for record storage, Lambda for backend logic, and SES for email notifications.
+  </p>
+  <div class="flex flex-wrap gap-3 mb-6">
+    <span class="bg-black/30 text-xs text-gray-300 px-3 py-2 rounded-lg flex items-center gap-2"><i data-lucide="hard-drive" class="w-4 h-4 text-green-400"></i>S3</span>
+    <span class="bg-black/30 text-xs text-gray-300 px-3 py-2 rounded-lg flex items-center gap-2"><i data-lucide="zap" class="w-4 h-4 text-yellow-400"></i>Lambda</span>
+    <span class="bg-black/30 text-xs text-gray-300 px-3 py-2 rounded-lg flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4 text-red-400"></i>SES</span>
+  </div>
+  <div class="flex items-center justify-between">
+    <div class="flex items-center space-x-2 text-blue-400">
+      <i data-lucide="play-circle" class="w-4 h-4"></i>
+      <span class="text-sm">Planning</span>
+    </div>
+    <i data-lucide="external-link" class="w-5 h-5 text-blue-400"></i>
+  </div>
+</div>
+
+
+        <!-- Add more project cards below as needed -->
+        <!-- Example card for Infrastructure Automation etc. -->
+        <!-- You already wrote these cards — reuse them here -->
+
+      </div>
+
+      <div class="mt-16 text-center">
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-8 inline-block max-w-2xl">
+          <h3 class="text-2xl font-semibold text-white mb-4">Interested in Collaborating?</h3>
+          <p class="text-gray-300 mb-6">I'm always excited to work on innovative cloud projects and explore new AWS services. Let's build something amazing together!</p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="contact.html" class="inline-flex items-center bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300">
+              <i data-lucide="message-circle" class="w-5 h-5 mr-2"></i> Start a Conversation
+            </a>
+            <a href="https://github.com/manikanta168" target="_blank" class="inline-flex items-center border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300">
+              <i data-lucide="github" class="w-5 h-5 mr-2"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 border-t border-white/10 bg-black/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="flex items-center justify-center space-x-3 mb-4">
+        <div class="w-8 h-8 bg-gradient-to-br from-blue-400 to-purple-600 rounded-lg flex items-center justify-center">
+          <i data-lucide="cloud" class="w-5 h-5 text-white"></i>
+        </div>
+        <span class="text-white font-semibold text-lg">Vanamada Manikanta</span>
+      </div>
+      <p class="text-gray-400 mb-4">© 2024 Vanamada Manikanta. Built with passion for cloud technology.</p>
+      <div class="flex items-center justify-center space-x-6">
+        <a href="https://www.linkedin.com/in/manikanta-vanamada-b8834b357/" class="text-gray-400 hover:text-blue-400"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+        <a href="#" class="text-gray-400 hover:text-orange-400"><i data-lucide="code" class="w-5 h-5"></i></a>
+        <a href="mailto:manikantav663@gmail.com" class="text-gray-400 hover:text-red-400"><i data-lucide="mail" class="w-5 h-5"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script>
+    // Toggle mobile menu
+    document.getElementById("mobile-menu-btn").addEventListener("click", function () {
+      document.getElementById("mobile-menu").classList.toggle("hidden");
+    });
+
+    // Initialize Lucide icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>

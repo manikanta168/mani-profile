@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - Vanamada Manikanta</title>
+    <meta name="description" content="Professional experience of Vanamada Manikanta as a Cloud Developer Intern at TechnicalHub.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 relative overflow-x-hidden">
+    <!-- Floating Background Elements -->
+    <div class="floating-elements"></div>
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/5 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-400 to-purple-600 rounded-lg flex items-center justify-center">
+                        <i data-lucide="cloud" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <span class="text-white font-bold text-xl">Vanamada Manikanta</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="flex items-center space-x-8">
+                        <a href="index.html" class="nav-link text-sm font-medium text-white hover:text-blue-300 transition-all duration-300 relative group">
+                            Home
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
+                        </a>
+                        <a href="about.html" class="nav-link text-sm font-medium text-white hover:text-blue-300 transition-all duration-300 relative group">
+                            About
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
+                        </a>
+                        <a href="experience.html" class="nav-link text-sm font-medium text-blue-400 transition-all duration-300 relative group">
+                            Experience
+                            <span class="absolute bottom-0 left-0 w-full h-0.5 bg-blue-400 transition-all duration-300"></span>
+                        </a>
+                        <a href="projects.html" class="nav-link text-sm font-medium text-white hover:text-blue-300 transition-all duration-300 relative group">
+                            Projects
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
+                        </a>
+                        <a href="skills.html" class="nav-link text-sm font-medium text-white hover:text-blue-300 transition-all duration-300 relative group">
+                            Skills
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
+                        </a>
+                        <a href="certifications.html" class="nav-link text-sm font-medium text-white hover:text-blue-300 transition-all duration-300 relative group">
+                            Certifications
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
+                        </a>
+                        <a href="contact.html" class="nav-link text-sm font-medium text-white hover:text-blue-300 transition-all duration-300 relative group">
+                            Contact
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-white hover:text-blue-300 transition-colors p-2 rounded-lg hover:bg-white/10">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="md:hidden bg-black/50 backdrop-blur-md hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="mobile-nav-link block w-full text-left px-4 py-3 text-base font-medium text-white hover:text-blue-300 hover:bg-white/10 rounded-lg transition-all duration-300">Home</a>
+                <a href="about.html" class="mobile-nav-link block w-full text-left px-4 py-3 text-base font-medium text-white hover:text-blue-300 hover:bg-white/10 rounded-lg transition-all duration-300">About</a>
+                <a href="experience.html" class="mobile-nav-link block w-full text-left px-4 py-3 text-base font-medium text-blue-400 bg-white/10 rounded-lg">Experience</a>
+                <a href="projects.html" class="mobile-nav-link block w-full text-left px-4 py-3 text-base font-medium text-white hover:text-blue-300 hover:bg-white/10 rounded-lg transition-all duration-300">Projects</a>
+                <a href="skills.html" class="mobile-nav-link block w-full text-left px-4 py-3 text-base font-medium text-white hover:text-blue-300 hover:bg-white/10 rounded-lg transition-all duration-300">Skills</a>
+                <a href="certifications.html" class="mobile-nav-link block w-full text-left px-4 py-3 text-base font-medium text-white hover:text-blue-300 hover:bg-white/10 rounded-lg transition-all duration-300">Certifications</a>
+                <a href="contact.html" class="mobile-nav-link block w-full text-left px-4 py-3 text-base font-medium text-white hover:text-blue-300 hover:bg-white/10 rounded-lg transition-all duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Experience Section -->
+    <section class="py-20 min-h-screen pt-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">Experience</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-600 mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="glass-card rounded-2xl p-8 transition-all duration-300 animate-fade-in">
+                    <div class="flex items-start space-x-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="briefcase" class="w-8 h-8 text-white"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                                <div>
+                                    <h3 class="text-2xl font-semibold text-white mb-2">Cloud Developer Intern</h3>
+                                    <p class="text-blue-400 font-medium text-lg">TechnicalHub</p>
+                                </div>
+                                <div class="flex items-center space-x-2 text-gray-400 text-sm">
+                                    <i data-lucide="calendar" class="w-4 h-4"></i>
+                                    <span>2023 - Present</span>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <h4 class="text-xl font-medium text-white mb-4">Key Project: Real-time Multilingual Audio-to-Text Translator</h4>
+                                <p class="text-gray-300 mb-6 leading-relaxed">
+                                    Developed a comprehensive serverless application that enables users to upload audio files 
+                                    via a web interface and receive real-time translated text output with support for multiple languages.
+                                </p>
+                                
+                                <div class="grid md:grid-cols-2 gap-6 mb-8">
+                                    <div class="bg-black/30 rounded-xl p-6 border border-white/10">
+                                        <h5 class="font-semibold text-white mb-4 flex items-center">
+                                            <i data-lucide="settings" class="w-5 h-5 mr-2 text-blue-400"></i>
+                                            Technologies Used
+                                        </h5>
+                                        <ul class="text-gray-300 space-y-2">
+                                            <li class="flex items-center">
+                                                <i data-lucide="check" class="w-4 h-4 mr-2 text-green-400"></i>
+                                                AWS Transcribe
+                                            </li>
+                                            <li class="flex items-center">
+                                                <i data-lucide="check" class="w-4 h-4 mr-2 text-green-400"></i>
+                                                AWS Lambda
+                                            </li>
+                                            <li class="flex items-center">
+                                                <i data-lucide="check" class="w-4 h-4 mr-2 text-green-400"></i>
+                                                REST APIs
+                                            </li>
+                                            <li class="flex items-center">
+                                                <i data-lucide="check" class="w-4 h-4 mr-2 text-green-400"></i>
+                                                Web Interface Development
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-black/30 rounded-xl p-6 border border-white/10">
+                                        <h5 class="font-semibold text-white mb-4 flex items-center">
+                                            <i data-lucide="star" class="w-5 h-5 mr-2 text-yellow-400"></i>
+                                            Key Features
+                                        </h5>
+                                        <ul class="text-gray-300 space-y-2">
+                                            <li class="flex items-center">
+                                                <i data-lucide="zap" class="w-4 h-4 mr-2 text-blue-400"></i>
+                                                Real-time processing
+                                            </li>
+                                            <li class="flex items-center">
+                                                <i data-lucide="globe" class="w-4 h-4 mr-2 text-blue-400"></i>
+                                                Multilingual support
+                                            </li>
+                                            <li class="flex items-center">
+                                                <i data-lucide="cloud" class="w-4 h-4 mr-2 text-blue-400"></i>
+                                                Serverless architecture
+                                            </li>
+                                            <li class="flex items-center">
+                                                <i data-lucide="user-check" class="w-4 h-4 mr-2 text-blue-400"></i>
+                                                User-friendly interface
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-xl p-6 border border-blue-500/20">
+                                    <h5 class="font-semibold text-white mb-4 flex items-center">
+                                        <i data-lucide="trophy" class="w-5 h-5 mr-2 text-yellow-400"></i>
+                                        Key Achievements
+                                    </h5>
+                                    <ul class="text-gray-300 space-y-3">
+                                        <li class="flex items-start">
+                                            <i data-lucide="arrow-right" class="w-5 h-5 mr-3 text-blue-400 mt-0.5"></i>
+                                            Successfully implemented serverless architecture reducing infrastructure costs by 60%
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i data-lucide="arrow-right" class="w-5 h-5 mr-3 text-blue-400 mt-0.5"></i>
+                                            Achieved 95% accuracy in audio transcription across multiple languages
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i data-lucide="arrow-right" class="w-5 h-5 mr-3 text-blue-400 mt-0.5"></i>
+                                            Delivered project 2 weeks ahead of schedule with full documentation
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i data-lucide="arrow-right" class="w-5 h-5 mr-3 text-blue-400 mt-0.5"></i>
+                                            Created comprehensive testing suite ensuring 99.9% uptime
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12 text-center">
+                    <div class="glass-card rounded-2xl p-8 inline-block">
+                        <h3 class="text-xl font-semibold text-white mb-4">Looking for New Opportunities</h3>
+                        <p class="text-gray-300 mb-6">
+                            Ready to contribute to innovative cloud projects and grow with a dynamic team.
+                        </p>
+                        <a href="contact.html" class="inline-flex items-center bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300">
+                            <i data-lucide="mail" class="w-5 h-5 mr-2"></i>
+                            Get In Touch
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-white/10 bg-black/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="flex items-center justify-center space-x-3 mb-4">
+                    <div class="w-8 h-8 bg-gradient-to-br from-blue-400 to-purple-600 rounded-lg flex items-center justify-center">
+                        <i data-lucide="cloud" class="w-5 h-5 text-white"></i>
+                    </div>
+                    <span class="text-white font-semibold text-lg">Vanamada Manikanta</span>
+                </div>
+                <p class="text-gray-400 mb-4">
+                    © 2024 Vanamada Manikanta. Built with passion for cloud technology.
+                </p>
+                <div class="flex items-center justify-center space-x-6">
+                    <a href="https://www.linkedin.com/in/manikanta-vanamada-b8834b357/" class="text-gray-400 hover:text-blue-400 transition-colors">
+                        <i data-lucide="linkedin" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-orange-400 transition-colors">
+                        <i data-lucide="code" class="w-5 h-5"></i>
+                    </a>
+                    <a href="mailto:manikantav663@gmail.com" class="text-gray-400 hover:text-red-400 transition-colors">
+                        <i data-lucide="mail" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
